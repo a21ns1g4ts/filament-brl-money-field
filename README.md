@@ -1,8 +1,8 @@
 # Filament BRL Field Money
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/a21ns1g4ts/filament-brl-money-field.svg?style=flat-square)](https://packagist.org/packages/a21ns1g4ts/filament-brl-money-field)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/a21ns1g4ts/filament-brl-money-field/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/a21ns1g4ts/filament-brl-money-field/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/a21ns1g4ts/filament-brl-money-field/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/a21ns1g4ts/filament-brl-money-field/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
+<!-- [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/a21ns1g4ts/filament-brl-money-field/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/a21ns1g4ts/filament-brl-money-field/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/a21ns1g4ts/filament-brl-money-field/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/a21ns1g4ts/filament-brl-money-field/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain) -->
 [![Total Downloads](https://img.shields.io/packagist/dt/a21ns1g4ts/filament-brl-money-field.svg?style=flat-square)](https://packagist.org/packages/a21ns1g4ts/filament-brl-money-field)
 
 
