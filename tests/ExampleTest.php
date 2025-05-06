@@ -1,5 +1,6 @@
 <?php
 
-it('can test', function () {
-    expect(true)->toBeTrue();
+namespace Tests\Filament\Resources;
+
+beforeEach(function () {
 });
