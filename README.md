@@ -16,6 +16,16 @@ You can install the package via composer:
 composer require a21ns1g4ts/filament-brl-money-field
 ```
 
+## Usage
+```php
+use A21ns1g4ts\FilamentBrlMoneyField\BrlMoneyInput;
+
+BrlMoneyInput::make('price')
+    ->label('Preço')
+    ->columnSpan(1)
+                                  
+```
+
 ## Testing
 
 ```bash
