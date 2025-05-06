@@ -1,11 +1,11 @@
 <?php
 
-namespace A21ns1g4ts\FilamentBrlMoneyField\Forms\Components;
+namespace A21ns1g4ts\FilamentBrlMoneyField\Filament\Forms\Components;
 
 use Filament\Forms\Components\TextInput;
 use Filament\Support\RawJs;
 
-class BrlMoney extends TextInput
+class BrlMoneyInput extends TextInput
 {
     protected function setUp(): void
     {
@@ -21,8 +21,8 @@ class BrlMoney extends TextInput
                     return value;
                 }
             JS))
-            ->dehydrateStateUsing(fn ($state) =>
-                $state ? str_replace(',', '.', str_replace('.', '', $state)) : null
+            ->dehydrateStateUsing(
+                fn ($state) => $state ? str_replace(',', '.', str_replace('.', '', $state)) : null
             )
             ->inputMode('decimal');
     }

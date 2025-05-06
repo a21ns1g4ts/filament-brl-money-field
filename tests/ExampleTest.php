@@ -2,5 +2,4 @@
 
 namespace Tests\Filament\Resources;
 
-beforeEach(function () {
-});
+beforeEach(function () {});
