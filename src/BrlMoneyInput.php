@@ -1,6 +1,6 @@
 <?php
 
-namespace A21ns1g4ts\FilamentBrlMoneyField\Filament\Forms\Components;
+namespace A21ns1g4ts\FilamentBrlMoneyField;
 
 use Filament\Forms\Components\TextInput;
 use Filament\Support\RawJs;
