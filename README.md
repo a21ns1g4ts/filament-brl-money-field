@@ -1,4 +1,4 @@
-# Filament BRL Field Money
+# Filament BRL Money Field
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/a21ns1g4ts/filament-brl-money-field.svg?style=flat-square)](https://packagist.org/packages/a21ns1g4ts/filament-brl-money-field)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/a21ns1g4ts/filament-brl-money-field/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/a21ns1g4ts/filament-brl-money-field/actions?query=workflow%3Arun-tests+branch%3Amain)
