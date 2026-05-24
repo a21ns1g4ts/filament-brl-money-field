@@ -1,11 +1,9 @@
 # Filament BRL Field Money
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/a21ns1g4ts/filament-brl-money-field.svg?style=flat-square)](https://packagist.org/packages/a21ns1g4ts/filament-brl-money-field)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/a21ns1g4ts/filament-brl-money-field/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/a21ns1g4ts/filament-brl-money-field/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![Coverage](https://img.shields.io/codecov/c/github/a21ns1g4ts/filament-brl-money-field/main?style=flat-square)](https://codecov.io/gh/a21ns1g4ts/filament-brl-money-field)
 [![Total Downloads](https://img.shields.io/packagist/dt/a21ns1g4ts/filament-brl-money-field.svg?style=flat-square)](https://packagist.org/packages/a21ns1g4ts/filament-brl-money-field)
-<!-- [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/a21ns1g4ts/filament-brl-money-field/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/a21ns1g4ts/filament-brl-money-field/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/a21ns1g4ts/filament-brl-money-field/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/a21ns1g4ts/filament-brl-money-field/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain) -->
-
-
 
 ## Installation
 
@@ -16,13 +14,14 @@ composer require a21ns1g4ts/filament-brl-money-field
 ```
 
 ## Usage
+
 ```php
 use A21ns1g4ts\FilamentBrlMoneyField\BrlMoneyInput;
 
 BrlMoneyInput::make('price')
     ->label('Preço')
     ->columnSpan(1)
-                                  
+
 ```
 
 ## Testing
