@@ -43,11 +43,6 @@ class BrlMoneyInput extends TextInput
             JS))
             ->dehydrateStateUsing(fn ($state) => $this->normalizeStateForDehydration($state))
             ->formatStateUsing(fn ($state) => $this->formatStateForDisplay($state))
-            ->afterStateHydrated(function (BrlMoneyInput $component, $state) {
-                if (blank($state) || $state === 'null' || $state === 'undefined') {
-                    $component->state('');
-                }
-            })
             ->afterStateUpdated(function (BrlMoneyInput $component, $state) {
                 if (blank($state) || $state === 'null' || $state === 'undefined') {
                     $component->state('');

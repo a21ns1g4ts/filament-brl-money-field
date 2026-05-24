@@ -42,6 +42,15 @@ it('formats stored states for Filament hydration', function (mixed $state, strin
     'float' => [1234.5, '1.234,50'],
 ]);
 
+it('hydrates stored numeric states before the input mask runs', function () {
+    $input = BrlMoneyInput::make('price');
+
+    $input->state(34);
+    $input->callAfterStateHydrated();
+
+    expect($input->getState())->toBe('34,00');
+});
+
 it('supports custom decimal places and dynamic decimal place fields', function () {
     $input = BrlMoneyInput::make('amount')
         ->decimalPlaces(3)
