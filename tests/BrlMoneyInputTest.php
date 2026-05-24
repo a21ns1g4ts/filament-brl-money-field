@@ -1,6 +1,11 @@
 <?php
 
 use A21ns1g4ts\FilamentBrlMoneyField\BrlMoneyInput;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
+use Filament\Schemas\Schema;
+use Livewire\Component;
+use Livewire\Livewire;
 
 it('configures the Filament 5 text input for BRL money', function () {
     $input = BrlMoneyInput::make('price');
@@ -43,13 +48,39 @@ it('formats stored states for Filament hydration', function (mixed $state, strin
 ]);
 
 it('hydrates stored numeric states before the input mask runs', function () {
-    $input = BrlMoneyInput::make('price');
-
-    $input->state(34);
-    $input->callAfterStateHydrated();
-
-    expect($input->getState())->toBe('34,00');
+    Livewire::test(BrlMoneyInputFormTestComponent::class)
+        ->assertSet('data.price', '34,00');
 });
+
+class BrlMoneyInputFormTestComponent extends Component implements HasForms
+{
+    use InteractsWithForms;
+
+    public ?array $data = [];
+
+    public function mount(): void
+    {
+        $this->form->fill([
+            'price' => 34,
+        ]);
+    }
+
+    public function form(Schema $schema): Schema
+    {
+        return $schema
+            ->components([
+                BrlMoneyInput::make('price'),
+            ])
+            ->statePath('data');
+    }
+
+    public function render(): string
+    {
+        return <<<'HTML'
+            <div></div>
+        HTML;
+    }
+}
 
 it('supports custom decimal places and dynamic decimal place fields', function () {
     $input = BrlMoneyInput::make('amount')
