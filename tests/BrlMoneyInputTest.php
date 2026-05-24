@@ -4,6 +4,7 @@ use A21ns1g4ts\FilamentBrlMoneyField\BrlMoneyInput;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Schemas\Schema;
+use Illuminate\Support\MessageBag;
 use Livewire\Component;
 use Livewire\Livewire;
 
@@ -63,6 +64,11 @@ class BrlMoneyInputFormTestComponent extends Component implements HasForms
         $this->form->fill([
             'price' => 34,
         ]);
+    }
+
+    public function getErrorBag()
+    {
+        return new MessageBag;
     }
 
     public function form(Schema $schema): Schema

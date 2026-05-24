@@ -18,9 +18,7 @@ composer require a21ns1g4ts/filament-brl-money-field
 ```php
 use A21ns1g4ts\FilamentBrlMoneyField\BrlMoneyInput;
 
-BrlMoneyInput::make('price')
-    ->label('Preço')
-    ->columnSpan(1)
+BrlMoneyInput::make('price');
 
 ```
 

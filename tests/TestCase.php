@@ -48,6 +48,14 @@ class TestCase extends Orchestra
 
     public function getEnvironmentSetUp($app)
     {
+        $compiledViewsPath = __DIR__ . '/../build/testing/views';
+
+        if (! is_dir($compiledViewsPath)) {
+            mkdir($compiledViewsPath, 0777, true);
+        }
+
+        config()->set('view.compiled', $compiledViewsPath);
+        config()->set('app.key', 'base64:7kfNWPvREHJUlxT2Yhi+9mqVdr0dLs/p5Z6wJl0mebg=');
         config()->set('database.default', 'testing');
     }
 }

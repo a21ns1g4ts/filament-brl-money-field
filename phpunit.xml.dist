@@ -9,7 +9,7 @@
     failOnWarning="true"
     failOnRisky="true"
     failOnEmptyTestSuite="true"
-    cacheDirectory=".phpunit.cache"
+    cacheDirectory="build/pest-cache"
 >
     <testsuites>
         <testsuite name="a2insights Test Suite">
@@ -24,4 +24,7 @@
             <directory suffix=".php">./src</directory>
         </include>
     </source>
+    <php>
+        <ini name="error_reporting" value="8191" />
+    </php>
 </phpunit>
